@@ -1,4 +1,5 @@
-require 'Person'
+require 'person'
+
 # Defines the Teacher class
 class Teacher < Person
   def initialize(specialization)

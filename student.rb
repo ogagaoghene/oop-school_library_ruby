@@ -1,4 +1,5 @@
 require 'person'
+
 # Defines the Student class
 class Student < Person
   def initialize(classroom)
