@@ -3,7 +3,7 @@
 # Project Name
 
 > Description the project.
-A school library application written in Ruby
+A school library application written in Ruby. Classroom, rentals and books classes are added. Relationships such as one to many, belongs_to, one to one relationships are created between the different classes.
 
 ## Built With
 
@@ -14,6 +14,8 @@ A school library application written in Ruby
 **This is an example of how to implement the Decorator pattern**
 
 To get a local copy up and running follow these simple example steps.
+- git clone https://github.com/ogagaoghene/oop_school_library_ruby.git
+- cd into oop_school_library_ruby 
 
 ## Authors
 
