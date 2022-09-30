@@ -2,8 +2,9 @@
 
 # Project Name
 
-> Description the project.
-A school library application written in Ruby. Classroom, rentals and books classes are added. Relationships such as one to many, belongs_to, one to one relationships are created between the different classes.
+> Description of the project.
+An interactive console based school library app written in Ruby to demonstrate the concept Object Oriented Programming(OOP). Two files - main.rb and app.rb were added to setup the program's entry point - the point of execution of a program.  
+
 
 ## Built With
 
