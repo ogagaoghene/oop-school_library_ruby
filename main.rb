@@ -27,7 +27,7 @@ end
 
 def menu
   $stdout.sync = true
-  puts 'Welcome to the School library Application!'
+  puts 'Welcome to the School library Application!!'
   puts "
   Please choose an option from the list by entering a number:\n
   1 - List all books
