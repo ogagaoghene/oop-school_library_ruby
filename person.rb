@@ -3,7 +3,7 @@ require_relative 'nameable'
 class Person < Nameable
   attr_accessor :name, :age, :parent_permission
   attr_reader :id, :rentals
-  
+
   def initialize(age, name, parent_permission: true)
     super()
     @id = id || Random.rand(1..1000).to_s
@@ -32,5 +32,3 @@ class Person < Nameable
     @age >= 18
   end
 end
-
-

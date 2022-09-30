@@ -4,20 +4,20 @@ require_relative 'teacher'
 require_relative 'book'
 require_relative 'rental'
 
-class Application 
+class Application
   attr_accessor :books, :people, :rentals
 
-  def initialize 
-    @books    = []
-    @people   = []
-    @rentals  = []
-  end 
+  def initialize
+    @books = []
+    @people = []
+    @rentals = []
+  end
 
-  def run 
-    menu()
-  end 
+  def run
+    menu
+  end
 
-  #List all books
+  # List all books
   def list_all_books
     if @books.empty?
       puts 'Book list is empty'
@@ -25,9 +25,9 @@ class Application
       puts 'List of all Books'
       @books.each { |book| puts "Title: #{book.title} Author: #{book.author}" }
     end
-  end 
+  end
 
-  #List all people
+  # List all people
   def list_all_people
     if @people.empty?
       puts 'People list is empty, add some people...'
@@ -37,12 +37,12 @@ class Application
     end
   end
 
-  #Create a person
+  # Create a person
   def add_person
     puts 'Creating a Person'
     print 'Do you want to create a student(1) or a teacher(2)? [Enter the number]: '
     choice = gets.chomp.to_i
-    case choice 
+    case choice
     when 1
       add_student
     when 2
@@ -50,33 +50,33 @@ class Application
     else
       puts 'Invalid option selected, please select a valid option'
     end
-  end 
+  end
 
-  #Create a student 
-  def add_student 
+  # Create a student
+  def add_student
     print 'Student age: '
-    age = gets.chomp().to_i
+    age = gets.chomp.to_i
 
     print 'Student name: '
-    name = gets.chomp()
+    name = gets.chomp
 
     print 'Has parent permission? [Y/N]: '
     parent_permission_input = gets.chomp.downcase
     parent_permission = (parent_permission_input == 'y')
- 
+
     @people << Student.new(age, name, parent_permission: parent_permission)
     puts "\n \n"
     puts 'Student created successfully!!!'
     puts "\n \n"
-  end 
+  end
 
-   #Create a teacher
-   def add_teacher
+  # Create a teacher
+  def add_teacher
     print 'Age: '
-    age = gets.chomp().to_i
+    age = gets.chomp.to_i
 
     print 'Name: '
-    name = gets.chomp()
+    name = gets.chomp
 
     print 'Specialization: '
     specialization = gets.chomp
@@ -87,8 +87,8 @@ class Application
     puts "\n \n"
   end
 
-  #Create a book
-  def add_book 
+  # Create a book
+  def add_book
     print 'Title: '
     title = gets.chomp
     print 'Author: '
@@ -96,10 +96,10 @@ class Application
     book = Book.new(title, author)
     @books << book
     puts "#{title} by #{author} created successfully!!!"
-  end 
+  end
 
-  #Create a rental
-  def add_rental 
+  # Create a rental
+  def add_rental
     puts "\n"
     @people.each_with_index do |person, index|
       puts "#{index}) [#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
@@ -124,10 +124,10 @@ class Application
     @rentals << new_rental
 
     puts "Rental successfully created !!! \n \n"
-  end 
+  end
 
   # List rentals for a given person by ID
-  def list_rentals_by_id 
+  def list_rentals_by_id
     puts "\n \n"
     if @people.length
       @people.each do |person|
@@ -142,7 +142,5 @@ class Application
     person = @rentals.select { |p| p.person.id == person_id }
     # rentals = person.rentals
     person.each { |rental| puts "Date: #{rental.date}, Book: #{rental.book.title}, Author: #{rental.book.author}" }
-  end 
-end 
-
-
+  end
+end
