@@ -1,22 +1,73 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# OOP school library: add basic UI
 
-> Description of the project.
-An interactive console based school library app written in Ruby to demonstrate the concept Object Oriented Programming(OOP). Two files - main.rb and app.rb were added to setup the program's entry point - the point of execution of a program.  
+## Description 🏗️
+Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow you to:
+
+- Add new students or teachers.
+- Add new books.
+- Save records of who borrowed a given book and when. 
 
 
 ## Built With
 
 - Ruby
 
-## Getting Started
+## Getting Started 🏁
 
-**This is an example of how to implement the Decorator pattern**
+### Prerequisites 📜
 
-To get a local copy up and running follow these simple example steps.
-- git clone https://github.com/ogagaoghene/oop_school_library_ruby.git
-- cd into oop_school_library_ruby 
+You will be needing:
+
+- A terminal terminal
+- A code editor
+- Ruby (follow the instruction based on your OS)
+```bash
+https://www.ruby-lang.org/en/documentation/installation/
+```
+
+### Setup
+
+### Clone this repository
+
+```bash
+git clone https://github.com/ogagaoghene/oop_school_library_ruby.git
+```
+### Move into the directory with
+
+```bash
+cd oop_school_library_ruby
+```
+
+### Run Project
+```bash
+./main.rb
+```
+
+### Install linter
+
+```bash
+bundle install
+```
+
+### Run linter
+
+```bash
+rubocop .
+```
+
+### Auto-correct
+
+In auto-correct mode, RuboCop will try to automatically fix offenses:
+
+```bash
+rubocop -A
+```
+
+```bash
+rubocop --auto-correct-all
+```
 
 ## Authors
 
@@ -27,24 +78,27 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [ogagaoghene-esi](https://linkedin.com/in/ogagaoghene-esi
 
 
-## 🤝 Contributing
+## 🤝 Contributors
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are greatly appreciated!
 
-Feel free to check the [issues page](../../issues/).
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "improvements".
 
-## Show your support
+- Fork the Project
+- Create your Feature Branch (git checkout -b feature/yourfeaturename)
+- Commit your Changes (git commit -m 'Add suggested feature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
 
+## 📝 License
+
+This project is licensed by [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## Show your support 💪
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
-## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
