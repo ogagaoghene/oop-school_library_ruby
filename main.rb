@@ -47,4 +47,4 @@ class Main
 end
 
 app = Main.new
-app.prompt()
+app.prompt
