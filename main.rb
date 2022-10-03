@@ -48,5 +48,3 @@ end
 
 app = Main.new
 app.prompt
-
-
