@@ -9,7 +9,6 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 - Add new books.
 - Save records of who borrowed a given book and when. 
 
-
 ## Built With
 
 - Ruby
@@ -76,7 +75,6 @@ rubocop --auto-correct-all
 - GitHub: [ogagaoghene](https://github.com/ogagaoghene)
 - Twitter: [@esi_ogaga](https://twitter.com/esi_ogaga)
 - LinkedIn: [ogagaoghene-esi](https://linkedin.com/in/ogagaoghene-esi
-
 
 ## 🤝 Contributors
 
