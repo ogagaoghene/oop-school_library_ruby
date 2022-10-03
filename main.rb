@@ -3,7 +3,7 @@ require_relative 'app'
 
 class Main
   def initialize
-    @app = Application.new
+    app = Application.new
   end
 
   def menu
@@ -19,30 +19,30 @@ class Main
     7 - Exit"
   end
 
-  def options(value)
-    case value
+  def prompt
+    menu
+    choice = gets.chomp.to_i
+    options(choice)
+    prompt until @choice == 7
+  end
+
+  def options(choice)
+    case choice
     when 1
-      list_all_books
+      app.list_all_books
     when 2
-      list_all_people
+      app.list_all_people
     when 3
-      add_person
+      app.add_person
     when 4
-      add_book
+      app.add_book
     when 5
-      add_rental
+      app.add_rental
     when 6
-      list_rentals_by_id
+      app.list_rentals_by_id
     else
       exit
     end
-  end
-
-  def prompt
-    menu
-    @choice = gets.chomp.to_i
-    options(@choice)
-    menu until @choice == 7
   end
 end
 
