@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 require_relative 'app'
 
-class Main 
+class Main
   def initialize
     @app = Application.new
-  end 
+  end
 
   def menu
     puts 'Welcome to the School library Application!!'
@@ -18,7 +18,7 @@ class Main
     6 - List all rentals by ID for a given person
     7 - Exit"
   end
- 
+
   def options(value)
     case value
     when 1
@@ -42,9 +42,9 @@ class Main
     menu
     @choice = gets.chomp.to_i
     options(@choice)
-    menu until @choice = 7
-  end 
-end 
+    menu until @choice == 7
+  end
+end
 
-app = Main.new #Instance variable is created 
-app.prompt #Function prompt belonging to class Main is called
+app = Main.new
+app.prompt

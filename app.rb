@@ -8,8 +8,8 @@ class Application
   attr_accessor :books, :people, :rentals
 
   def initialize
-    @books   = []
-    @people  = []
+    @books = []
+    @people = []
     @rentals = []
   end
 
