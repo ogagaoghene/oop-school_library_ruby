@@ -13,10 +13,6 @@ class Application
     @rentals = []
   end
 
-  def run
-    menu
-  end
-
   # List all books
   def list_all_books
     if @books.empty?
