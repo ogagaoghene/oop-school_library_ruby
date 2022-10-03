@@ -7,7 +7,7 @@ Imagine that you are the librarian of OOP University, and you need a tool to rec
 
 - Add new students or teachers.
 - Add new books.
-- Save records of who borrowed a given book and when. 
+- Save records of who borrowed a given book and when.
 
 ## Built With
 
@@ -75,6 +75,12 @@ rubocop --auto-correct-all
 - GitHub: [ogagaoghene](https://github.com/ogagaoghene)
 - Twitter: [@esi_ogaga](https://twitter.com/esi_ogaga)
 - LinkedIn: [ogagaoghene-esi](https://linkedin.com/in/ogagaoghene-esi
+
+👤 **Oyebade Prisicilla**
+
+* GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
+* Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
+* LinkedIn: [Priscilla](https://linkedin.com/in/oyepriscilla)
 
 ## 🤝 Contributors
 
