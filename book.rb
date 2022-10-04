@@ -12,12 +12,8 @@ class Book
     @rentals = []
   end
 
-  def add_rental(rental)
-    @rental.push(rental)
-    rental.book = self
-  end
-
-  def save_rental(rental)
+  def add_rental(person, date)
+    rental = Rental.new(date, person, self)
     @rentals.push(rental)
   end
 
@@ -37,6 +33,7 @@ class Book
     content.each do |book|
       books << Book.new(book['title'], book['author'])
     end
+
     books
   end
 end
