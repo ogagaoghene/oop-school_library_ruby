@@ -1,4 +1,6 @@
 require_relative 'nameable'
+require_relative 'rental'
+require_relative 'file_reader'
 
 class Person < Nameable
   attr_accessor :name, :age, :parent_permission
@@ -13,8 +15,9 @@ class Person < Nameable
     @rentals = []
   end
 
-  def correct_name
-    @name
+  def add_rentals(date, book)
+    rental = Rental.new(date, self, book)
+    rentals.push(rental)
   end
 
   def self.save(people)
@@ -54,9 +57,8 @@ class Person < Nameable
     of_age? || @parent_permission
   end
 
-  def add_rental(rental)
-    @rentals.push(rental)
-    rental.book = self
+  def correct_name
+    @name
   end
 
   private
