@@ -1,4 +1,6 @@
 require_relative 'rental'
+require_relative 'file_reader'
+require_relative 'file_writer'
 
 class Book
   attr_accessor :title, :author
@@ -10,12 +12,28 @@ class Book
     @rentals = []
   end
 
-  def add_rental(rental)
-    @rental.push(rental)
-    rental.book = self
+  def add_rental(person, date)
+    rental = Rental.new(date, person, self)
+    @rentals.push(rental)
   end
 
-  def save_rental(rental)
-    @rentals.push(rental)
+  def self.save(books)
+    data = []
+    books.each do |book|
+      data << { title: book.title, author: book.author }
+    end
+    file_writer = FileWriter.new(data, 'books.json')
+    file_writer.write
+  end
+
+  def self.retrieve
+    books = []
+    file_reader = FileReader.new('books.json')
+    content = file_reader.read
+    content.each do |book|
+      books << Book.new(book['title'], book['author'])
+    end
+
+    books
   end
 end

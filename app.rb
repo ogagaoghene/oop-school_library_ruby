@@ -8,9 +8,9 @@ class Application
   attr_accessor :books, :people, :rentals
 
   def initialize
-    @books = []
-    @people = []
-    @rentals = []
+    @books = Book.retrieve
+    @people = Person.retrieve
+    @rentals = Rental.retrieve(@people)
   end
 
   # List all books
@@ -138,5 +138,12 @@ class Application
     person = @rentals.select { |p| p.person.id == person_id }
     # rentals = person.rentals
     person.each { |rental| puts "Date: #{rental.date}, Book: #{rental.book.title}, Author: #{rental.book.author}" }
+  end
+
+  # Save
+  def save_all
+    Book.save(@books)
+    Person.save(@people)
+    Rental.save_to_file(@rentals)
   end
 end
