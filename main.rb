@@ -42,6 +42,7 @@ class Main
     when 6
       @app.list_rentals_by_id
     else
+      @app.save_all
       exit
     end
   end
