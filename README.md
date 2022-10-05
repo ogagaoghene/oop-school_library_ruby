@@ -1,6 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# OOP school library: Unit Testing
+
+# OOP school library: Refactor
 
 ## Description 🏗️
 Testing OOP school library console applications with RSpec
