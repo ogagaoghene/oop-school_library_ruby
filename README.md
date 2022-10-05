@@ -1,13 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# OOP school library: add basic UI
+# OOP school library: Unit Testing
 
 ## Description 🏗️
-Imagine that you are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow you to:
-
-- Add new students or teachers.
-- Add new books.
-- Save records of who borrowed a given book and when.
+Testing OOP school library console applications with RSpec
 
 ## Built With
 
@@ -67,7 +63,19 @@ rubocop -A
 ```bash
 rubocop --auto-correct-all
 ```
+### Run Tests
+``.
+rspec spec/
+or 
+rspec spec/book_spec.rb
+rspec spec/classroom_spec.rb
+rspec spec/person_spec.rb
+rspec spec/rental_spec.rb
+rspec spec/student_spec.rb
+rspec spec/teacher_spec.rb
+rspec spec/book_spec.rb
 
+```
 ## Authors
 
 👤 **Esi Ogagaoghene**
