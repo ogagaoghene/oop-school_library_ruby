@@ -8,7 +8,7 @@ RSpec.describe 'Book' do
       @book = Book.new('Appreciate Always', 'David Great')
       student = Student.new(34, parent_permission: false)
       Rental.new('23 May 2022', @book, student)
-     end
+    end
     it 'takes two parameters and returns a Book object' do
       expect(@book).to be_an_instance_of Book
     end

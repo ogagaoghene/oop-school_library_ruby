@@ -73,8 +73,6 @@ rspec spec/person_spec.rb
 rspec spec/rental_spec.rb
 rspec spec/student_spec.rb
 rspec spec/teacher_spec.rb
-rspec spec/book_spec.rb
-
 ```
 ## Authors
 
